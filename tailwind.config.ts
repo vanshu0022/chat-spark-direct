@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,15 +53,9 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				chat: {
+					incoming: '#F3F4F6',
+					outgoing: '#EEF2FF',
 				}
 			},
 			borderRadius: {
@@ -84,11 +79,32 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'typing-indicator': {
+					'0%': { transform: 'translateY(0px)' },
+					'25%': { transform: 'translateY(-4px)' },
+					'50%': { transform: 'translateY(0px)' },
+					'75%': { transform: 'translateY(-4px)' },
+					'100%': { transform: 'translateY(0px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'typing-dot-1': 'typing-indicator 1.5s infinite 0s',
+				'typing-dot-2': 'typing-indicator 1.5s infinite 0.2s',
+				'typing-dot-3': 'typing-indicator 1.5s infinite 0.4s'
 			}
 		}
 	},
