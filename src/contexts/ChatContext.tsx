@@ -101,7 +101,7 @@ const mockChats: Chat[] = [
     id: 'chat2',
     participants: ['1', '4'],
     lastMessage: {
-      text: 'Let me know when you're free',
+      text: "Let me know when you're free",
       timestamp: Date.now() - 1000 * 60 * 60, // 1 hour ago
       senderId: '4',
       read: true
@@ -111,7 +111,7 @@ const mockChats: Chat[] = [
     id: 'chat3',
     participants: ['1', '2'],
     lastMessage: {
-      text: 'Sure, I'll get back to you with those files',
+      text: "Sure, I'll get back to you with those files",
       timestamp: Date.now() - 1000 * 60 * 60 * 3, // 3 hours ago
       senderId: '1',
       read: true
@@ -135,7 +135,7 @@ const generateMockMessages = (): Record<string, Message[]> => {
         id: '2',
         chatId: 'chat1',
         senderId: '3',
-        text: 'Sure, I'm available this afternoon.',
+        text: "Sure, I'm available this afternoon.",
         timestamp: Date.now() - 1000 * 60 * 20, // 20 minutes ago
         read: true
       },
@@ -143,7 +143,7 @@ const generateMockMessages = (): Record<string, Message[]> => {
         id: '3',
         chatId: 'chat1',
         senderId: '1',
-        text: 'Great! Let's talk at 2pm then.',
+        text: "Great! Let's talk at 2pm then.",
         timestamp: Date.now() - 1000 * 60 * 10, // 10 minutes ago
         read: true
       },
@@ -169,7 +169,7 @@ const generateMockMessages = (): Record<string, Message[]> => {
         id: '2',
         chatId: 'chat2',
         senderId: '1',
-        text: 'Hello Sarah, I'm a bit busy right now.',
+        text: "Hello Sarah, I'm a bit busy right now.",
         timestamp: Date.now() - 1000 * 60 * 90, // 1.5 hours ago
         read: true
       },
@@ -185,7 +185,7 @@ const generateMockMessages = (): Record<string, Message[]> => {
         id: '4',
         chatId: 'chat2',
         senderId: '4',
-        text: 'Let me know when you're free',
+        text: "Let me know when you're free",
         timestamp: Date.now() - 1000 * 60 * 60, // 1 hour ago
         read: true
       }
@@ -203,7 +203,7 @@ const generateMockMessages = (): Record<string, Message[]> => {
         id: '2',
         chatId: 'chat3',
         senderId: '1',
-        text: 'Yes, I'll prepare them right away.',
+        text: "Yes, I'll prepare them right away.",
         timestamp: Date.now() - 1000 * 60 * 60 * 4, // 4 hours ago
         read: true
       },
@@ -219,7 +219,7 @@ const generateMockMessages = (): Record<string, Message[]> => {
         id: '4',
         chatId: 'chat3',
         senderId: '1',
-        text: 'Sure, I'll get back to you with those files',
+        text: "Sure, I'll get back to you with those files",
         timestamp: Date.now() - 1000 * 60 * 60 * 3, // 3 hours ago
         read: true
       }
